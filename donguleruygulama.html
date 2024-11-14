@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (var i=10; i<=100; i++) {
+        console.log(i);
+        }
+
+        var i=10;
+        while(i<=100) {
+
+            console.log(i);
+            i=i+5;
+        }
+
+        var k_username = "guest";
+        var k_password = "12345";
+        var loggedin = false;
+
+        while (loggedin == false) {
+
+        var username =prompt("Kullanıcı adı :");
+        var password =prompt("Parola :");
+
+        if ((k_password==password) && (k_username==username)) {
+            alert("Giriş yapıldı.");
+            loggedin=true;
+        }
+
+        else {
+            alert("Hatalı kullanıcı adı veya paralo");
+        }
+    }
+
+
+    </script>
+</body>
+</html>
