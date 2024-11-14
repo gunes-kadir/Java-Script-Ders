@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diziler</title>
+</head>
+<body>
+    <script>
+
+        var marka = ["Opel","Toyota","Mazda","Renault","Bmw"];
+        var model = new Array("Corsa","Yaris","M-8","Clio");
+       
+        console.log(marka);
+        console.log(model);
+
+        model[0]="Astra"; 
+        console.log(model);
+
+        var auris = ["Toyota","Auris",42,true];
+
+        auris.push('blue'); // en sona değişken ekler
+        auris.unshift('HB'); // en başa değişken ekler
+        auris.pop(); // en sonda ki değişkeni siler
+        auris.shift(); // en başta ki değişkeni siler
+
+        console.log(auris);
+
+
+        for(var i=0; i<marka.length; i++) {
+            console.log(marka[i]);
+        }
+
+        if(marka.indexOf('Mazda')!==-1){
+            console.log(marka[marka.indexOf('Mazda')]);
+        } else {
+            console.log("Bulunamadı");
+        }
+        
+
+    </script>
+</body>
+</html>
