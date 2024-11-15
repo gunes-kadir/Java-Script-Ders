@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonksiyonlar</title>
+</head>
+<body>
+    <script>
+
+        function topla(a,b) {
+            return a+b;
+
+            
+        }
+
+            var sonuc = topla(10,20);
+             console.log(sonuc);
+            console.log(topla(40,50));
+
+
+            var now = 2018;
+            
+            function yashesapla(yas) {
+                return now-yas;
+            }
+
+            var ahmet = yashesapla(1990);
+            console.log(ahmet);
+
+            /*var yas =prompt("dogum yılı giriniz :");
+            alert(now-yas + ' yasındasınız');*/
+
+
+            
+
+            /*    var k_yas =prompt("Dogum tarihini giriniz :");
+                var ad =prompt("Adınızı giriniz :");
+                var yasi = now-k_yas;
+                var emeklilik = 65 - yasi;
+                console.log (ad + ' ' + emeklilik + ' ' + 'yıl sonra emekli olabilir') ;
+            */
+
+            function emeklilikhesapla(ad,yas){
+
+                var k_yas = yashesapla(yas);
+                var emeklilik = 65 - k_yas;
+
+                if(emeklilik>0){
+
+                console.log(ad + ' ' +emeklilik + ' yıl sonra emekli olabilir');
+            }else{
+                console.log(ad + ' zaten' + ' '+ (emeklilik*-1) + ' yıl önce emekli olmus')
+            }
+        
+        
+        
+        }
+            emeklilikhesapla('mahmut',1995);
+            emeklilikhesapla('ali',1950);
+        
+
+            
+            </script>
+</body>
+</html>
