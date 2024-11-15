@@ -7,7 +7,9 @@
 </head>
 <body>
     <script>
-        var personel = [{
+        var personel = [
+            
+        {
             ad : 'Ali',
             soyad : 'Yılmaz',
             cinsiyet : 'Erkek',
@@ -25,7 +27,7 @@
             telefon : '0262333333',
             adres : 'izmit kocaeli',
             meslek : 'bilgisayar mühendisi',
-            diller : ['ingilizce','almanca'],
+            diller : ['ingilizce','almanca' , 'fransızca'],
             hobiler : 'sinema,spor,kitap okumak'
         }  ,
 
@@ -36,16 +38,24 @@
             telefon : '0262333333',
             adres : 'izmit kocaeli',
             meslek : 'bilgisayar mühendisi',
-            diller : ['ingilizce','almanca'],
+            diller : ['ingilizce','arapça'],
             hobiler : 'sinema,spor,kitap okumak'
         } 
      ];
 
     
-    ;
     
-console.log(personel);
+    
+//console.log(personel);
 
+//personel.forEach(function(personel) {
+//console.log(personel.ad + ' ' + personel.soyad);
+
+//});
+
+personel.diler.forEach(function(dil) {
+console.log(dil);
+});
 
     
        
